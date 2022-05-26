@@ -1,0 +1,11 @@
+{
+  "artifactStructure": {
+      "assets": [
+          {
+              "root": "public"
+          }
+      ],
+      "hbsTemplates": []
+  },
+  "baseImageTag": "node-17"
+}
