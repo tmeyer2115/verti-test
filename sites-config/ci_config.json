@@ -2,10 +2,21 @@
   "artifactStructure": {
       "assets": [
           {
-              "root": "public"
+            "root": "public"
           }
       ],
       "hbsTemplates": []
   },
-  "baseImageTag": "node-17"
+  "baseImageTag": "node-17",
+    "dependencies": {
+        "installDepsCmd": "echo",
+        "requiredFiles": []
+    },
+    "buildArtifacts": {
+        "buildSetupCmd": "echo",
+        "buildCmd": "echo"
+    },
+    "livePreview": {
+        "serveCmd": "npx serve public/ -l 8080"
+    }
 }
