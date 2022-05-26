@@ -1,8 +1,21 @@
 <html>
   <head></head>
   <body>
+    <div class="container" id="yeIfr">
+      <!-- this script causes a race condition -->
+    <script>
+      var yIfr = document.createElement('script');
+      var ycont = document.getElementById('yeIfr');
+
+      if(entorno!='www.verti.es'){
+          yIfr.src = 'https://answers.verti.com.pagescdn.com/iframe.js';
+      } else {
+          yIfr.src = 'https://answers_verti_com.yextpages.net/iframe.js';
+      }
+      ycont.appendChild(yIfr);
+  </script>
+    </div>
     <div id="answers-container"></div>
-    <script src="https://answers.verti.com.pagescdn.com/iframe.js"></script>
     <script src="https://answers.verti.com.pagescdn.com/iframe.js"></script>
   </body>
 </html>
